@@ -24,7 +24,9 @@ export const App: React.FC = () => {
           }}
         />
       </section>
-      <section className={styles.articleSection}></section>
+      <section className={styles.articleSection}>
+        {!tasks.length && <p className={styles.articleText}>Leer</p>}
+      </section>
     </article>
   );
 };
