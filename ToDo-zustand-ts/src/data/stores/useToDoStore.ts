@@ -15,11 +15,11 @@ interface ToDoStore {
 
 export const useToDoStore = create<ToDoStore>((set, get) => ({
   tasks: [
-    // {
-    //   id: "string",
-    //   title: "string",
-    //   createdAt: 2,
-    // },
+    {
+      id: "string",
+      title: "string",
+      createdAt: 2,
+    },
   ],
   createTask: (title) => {
     const { tasks } = get();
